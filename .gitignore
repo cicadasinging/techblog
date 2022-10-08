@@ -1,6 +1,10 @@
 .idea
+
 node_modules
+dist
 .temp
 .cache
+.deploy
 
 yarn.lock
+package-lock.json
