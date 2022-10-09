@@ -9,7 +9,7 @@ yarn docs:build
 # Operations on directories and files.
 mkdir -p docs/.vuepress/.deploy
 cd docs/.vuepress/.deploy
-rm -rf *
+rm -rf docs
 mkdir docs
 mv -f ../dist/* docs
 
