@@ -7,15 +7,16 @@
 #### Chocolatey GUI：
 
 1. 安装软件 NVS（Node Version Switcher）
-
 2. 配置环境变量：【此电脑】> 右键【属性】>【高级系统设置】>【高级】>【环境变量】
-
-- 添加变量 `NVS_HOME`，值 `D:\MyData\NvsRepository`
-- 编辑变量 `Path`，添加值 `%UserProfile%\AppData\Local\nvs`
+    - 添加变量 `NVS_HOME`，值 `D:\MyData\NvsRepository`
+3. 修改配置文件：`D:\MyData\NvsRepository\settings.json`
+    - 添加变量 `linkToSystem`，值 `true`
 
 #### PowerShell：
 
-1. NVS 参考文档：`C:\Users\yli\AppData\Local\nvs\README.md`
+##### NVS
+
+1. 参考文档：`C:\Users\yli\AppData\Local\nvs\README.md`
 
 ```powershell
 nvs ls
@@ -29,13 +30,21 @@ node -v
 npm -v
 ```
 
-2. NPM 参考文档：https://docs.npmjs.com/cli/v8/commands/npm-config
+##### NPM
+
+1. 参考文档：https://docs.npmjs.com/cli/v8/commands/npm-config
+2. 配置环境变量：【此电脑】> 右键【属性】>【高级系统设置】>【高级】>【环境变量】
+   - 编辑变量 `Path`，添加值 `D:\MyData\NpmRepository\node_global`
 
 ```powershell
-# config npm
 npm c ls
 npm c set prefix "D:\\MyData\\NpmRepository\\node_global"
 npm c set cache "D:\\MyData\\NpmRepository\\node_cache"
+```
+
+3. 安装软件 Yarn
+
+```powershell
 # yrm conflict with nrm
 npm i nrm -g
 nrm --version
@@ -48,7 +57,10 @@ yarn -v
 npm ls -g
 ```
 
-3. Yarn
+##### Yarn
+
+1. 配置环境变量：【此电脑】> 右键【属性】>【高级系统设置】>【高级】>【环境变量】
+   - 编辑变量 `Path`，添加值 `D:\MyData\YarnRepository\node_global`
 
 ```powershell
 # config yarn
