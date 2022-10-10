@@ -11,6 +11,7 @@
 2. 配置环境变量：【此电脑】> 右键【属性】>【高级系统设置】>【高级】>【环境变量】
 
 - 添加变量 `NVS_HOME`，值 `D:\MyData\NvsRepository`
+- 编辑变量 `Path`，添加值 `%UserProfile%\AppData\Local\nvs`
 
 #### PowerShell：
 
