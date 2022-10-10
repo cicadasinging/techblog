@@ -4,7 +4,7 @@
 
 ### 本地操作：
 
-Chocolatey GUI：
+#### Chocolatey GUI：
 
 1. 安装软件 NVS（Node Version Switcher）
 
@@ -12,7 +12,7 @@ Chocolatey GUI：
 
 - 添加变量 `NVS_HOME`，值 `D:\MyData\NvsRepository`
 
-PowerShell：
+#### PowerShell：
 
 1. NVS 参考文档：`C:\Users\yli\AppData\Local\nvs\README.md`
 

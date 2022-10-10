@@ -2,18 +2,11 @@
 
 ## Steps
 
-### 云端操作：
-
-1. Chocolatey CLI 参考文档：
-    - https://chocolatey.org/install#individual
-2. Chocolatey GUI 参考文档：
-    - https://docs.chocolatey.org/en-us/chocolatey-gui/setup/installation
-
 ### 本地操作：
 
 #### PowerShell as admin：
 
-1. Chocolatey CLI：
+1. Chocolatey CLI 参考文档：https://chocolatey.org/install#individual
 
 ```powershell
 # not Restricted, suggest Bypass or AllSigned
@@ -26,7 +19,7 @@ choco
 choco upgrade chocolatey
 ```
 
-2. Chocolatey GUI：
+2. Chocolatey GUI 参考文档：https://docs.chocolatey.org/en-us/chocolatey-gui/setup/installation
 
 ```powershell
 choco install chocolateygui
