@@ -35,7 +35,7 @@ npm -v
 npm c ls
 npm c set prefix "D:\\MyData\\NpmRepository\\node_global"
 npm c set cache "D:\\MyData\\NpmRepository\\node_cache"
-# install nrm
+# yrm conflict with nrm
 npm i nrm -g
 nrm --version
 nrm ls

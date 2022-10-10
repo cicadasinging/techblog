@@ -4,8 +4,7 @@
 
 ### 云端操作（Oracle）：
 
-1. 下载软件：
-    - https://www.oracle.com/cn/java/technologies/downloads/#java8-windows
+1. 下载软件：https://www.oracle.com/cn/java/technologies/downloads/#java8-windows
 
 ### 本地操作（Windows 10）：
 
