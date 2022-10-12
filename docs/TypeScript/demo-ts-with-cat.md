@@ -1,6 +1,6 @@
 # demo-ts
 
-https://github.com/cicadasinging/demo-ts
+https://github.com/cicadasinging/demo-ts-with-cat
 
 ## Steps
 
