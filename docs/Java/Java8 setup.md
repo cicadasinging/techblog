@@ -8,8 +8,8 @@
 
 ### 本地操作（Windows 10）：
 
-2. 安装软件
-3. 配置系统环境变量：【此电脑】> 右键【属性】>【高级系统设置】>【高级】>【环境变量】
+1. 安装软件
+2. 配置系统环境变量：【此电脑】> 右键【属性】>【高级系统设置】>【高级】>【环境变量】
     - 添加变量 `JAVA_HOME`，值 `C:\MySoft\Java\jdk1.8.0_341`
     - 添加变量 `CLASSPATH`，值 `.;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar;`
     - 编辑变量 `Path`，添加值 `%JAVA_HOME%\bin`、`%JAVA_HOME%\jre\bin` 

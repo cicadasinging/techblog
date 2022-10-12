@@ -34,7 +34,7 @@ npm -v
 
 1. 参考文档：https://docs.npmjs.com/cli/v8/commands/npm-config
 2. 配置系统环境变量：【此电脑】> 右键【属性】>【高级系统设置】>【高级】>【环境变量】
-   - 编辑变量 `Path`，添加值 `D:\MyData\NpmRepository\node_global`
+    - 编辑变量 `Path`，添加值 `D:\MyData\NpmRepository\node_global`
 
 ```powershell
 npm c ls
@@ -46,13 +46,13 @@ npm c set cache "D:\\MyData\\NpmRepository\\node_cache"
 
 ```powershell
 # yrm conflict with nrm
-npm i nrm -g
+npm i -g nrm
 nrm --version
 nrm ls
 nrm test
 nrm use taobao
 # install yarn
-npm i yarn -g
+npm i -g yarn
 yarn -v
 npm ls -g
 ```
@@ -60,7 +60,7 @@ npm ls -g
 ##### Yarn
 
 1. 配置系统环境变量：【此电脑】> 右键【属性】>【高级系统设置】>【高级】>【环境变量】
-   - 编辑变量 `Path`，添加值 `D:\MyData\YarnRepository\node_global`
+    - 编辑变量 `Path`，添加值 `D:\MyData\YarnRepository\node_global`
 
 ```powershell
 # config yarn
@@ -70,12 +70,12 @@ yarn config set cache-folder "D:\MyData\YarnRepository\node_cache"
 yarn global dir
 yarn cache dir
 # install yrm
-npm i yrm -g
+npm i -g yrm
 yrm --version
 yrm ls
 yrm test
 yrm use taobao
 # yrm conflict with nrm
-npm un nrm -g
+npm un nrm
 npm ls -g
 ```
