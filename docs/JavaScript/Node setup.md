@@ -57,6 +57,17 @@ yarn -v
 npm ls -g
 ```
 
+4. 安装其他全局软件
+
+```powershell
+# npx
+npm i -g npx
+npx -v
+# prettier
+npm i -g prettier
+prettier -v
+```
+
 ##### Yarn
 
 1. 配置系统环境变量：【此电脑】> 右键【属性】>【高级系统设置】>【高级】>【环境变量】
