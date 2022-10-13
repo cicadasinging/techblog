@@ -12,7 +12,7 @@ https://github.com/cicadasinging/demo-ts--cat
 
 1. 打开【Get from Version Control】弹窗：
     - 选择【GitHub】
-    - 登录【Log ln to GitHub】
+    - 登录【Log In to GitHub】
     - 选择远程仓库 `demo-ts--cat`
     - 点击【Clone】
 

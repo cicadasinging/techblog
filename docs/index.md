@@ -11,6 +11,6 @@
 
 1. 打开【Get from Version Control】弹窗：
     - 选择【GitHub】
-    - 登录【Log ln to GitHub】
+    - 登录【Log In to GitHub】
     - 选择远程仓库 `techblog`
     - 点击【Clone】
