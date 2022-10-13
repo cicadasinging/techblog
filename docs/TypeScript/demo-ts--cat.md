@@ -1,19 +1,19 @@
-# demo-ts-with-cat
+# demo-ts--cat
 
-https://github.com/cicadasinging/demo-ts-with-cat
+https://github.com/cicadasinging/demo-ts--cat
 
 ## Steps
 
 ### 云端操作（Github）：
 
-1. 创建远程仓库 `demo-ts-with-cat`
+1. 创建远程仓库 `demo-ts--cat`
 
 ### 本地操作（WebStorm）：
 
 1. 打开【Get from Version Control】弹窗：
     - 选择【GitHub】
     - 登录【Log ln to GitHub】
-    - 选择远程仓库 `demo-ts-with-cat`
+    - 选择远程仓库 `demo-ts--cat`
     - 点击【Clone】
 
 2. 新建【HTML file】、【TypeScript file】等：
