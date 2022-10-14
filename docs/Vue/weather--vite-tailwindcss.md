@@ -1,12 +1,12 @@
-# demo-vite-tailwindcss--weather
+# weather--vite-tailwindcss
 
-https://github.com/cicadasinging/demo-vite-tailwindcss--weather
+https://github.com/cicadasinging/weather--vite-tailwindcss
 
 ## Steps
 
 ### 云端操作（Github）：
 
-1. 创建远程仓库 `demo-vite-tailwindcss--weather`
+1. 创建远程仓库 `weather--vite-tailwindcss`
 
 ### 本地操作：
 
@@ -19,7 +19,7 @@ cd D:\MyData\Projects\GitHub
 npm create vue@3
 ```
 
-> ? Project name: » demo-vite-tailwindcss--weather
+> ? Project name: » weather--vite-tailwindcss
 > ? Add Vue Router for Single Page Application development? » Yes
 
 #### VSCode
@@ -33,7 +33,7 @@ git init
 git add -A
 git commit -m "first commit"
 git branch -M main
-git remote add origin https://github.com/cicadasinging/demo-vite-tailwindcss--weather.git
+git remote add origin https://github.com/cicadasinging/weather--vite-tailwindcss.git
 git push -u origin main
 ```
 
