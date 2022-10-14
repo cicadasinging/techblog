@@ -57,7 +57,7 @@ module.exports = {
 };
 ```
 
-5. 创建 `src/assets/tailwind.css`：
+5. 新建 `src/assets/tailwind.css`：
 
 ```css
 @tailwind base;

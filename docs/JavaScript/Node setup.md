@@ -8,9 +8,9 @@
 
 1. 安装软件 NVS（Node Version Switcher）
 2. 配置系统环境变量：【此电脑】> 右键【属性】>【高级系统设置】>【高级】>【环境变量】
-    - 添加变量 `NVS_HOME`，值 `D:\MyData\NvsRepository`
+    - 新建变量 `NVS_HOME`，值 `D:\MyData\NvsRepository`
 3. 修改软件配置文件：`D:\MyData\NvsRepository\settings.json`
-    - 添加变量 `linkToSystem`，值 `true`
+    - 新建变量 `linkToSystem`，值 `true`
 
 #### PowerShell：
 
