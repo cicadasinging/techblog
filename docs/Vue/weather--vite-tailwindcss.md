@@ -1,18 +1,10 @@
 # weather--vite-tailwindcss
 
-https://github.com/cicadasinging/weather--vite-tailwindcss
+## 搭建基础环境
 
-## Steps
+### Vite
 
-### 云端操作（Github）：
-
-1. 创建远程仓库 `weather--vite-tailwindcss`
-
-### 本地操作：
-
-#### PowerShell
-
-1. [create-vue](https://github.com/vuejs/create-vue):
+1. [vuejs](https://github.com/vuejs)/**[create-vue](https://github.com/vuejs/create-vue)**:
 
 ```powershell
 cd D:\MyData\Projects\GitHub
@@ -22,13 +14,8 @@ npm create vue@3
 > ? Project name: » weather--vite-tailwindcss
 > ? Add Vue Router for Single Page Application development? » Yes
 
-#### VSCode
-
-打开【Terminal】边窗：
-
-1. 操作 git 关联远程仓库：
-
 ```bash
+cd weather--vite-tailwindcss
 git init
 git add -A
 git commit -m "first commit"
@@ -37,19 +24,16 @@ git remote add origin https://github.com/cicadasinging/weather--vite-tailwindcss
 git push -u origin main
 ```
 
-2. 安装 Tailwind 以及其它依赖项：
+### Tailwind CSS
+
+1. [Install Tailwind CSS with Vite](https://tailwindcss.com/docs/guides/vite#vue):
 
 ```bash
-npm i -D tailwindcss@latest postcss@latest autoprefixer@latest
-```
-
-3. 初始配置文件（`postcss.config.js`、`tailwind.config.js`）：
-
-```bash
+npm i -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p
 ```
 
-4. 配置 `tailwind.config.js`：
+2. `tailwind.config.js`:
 
 ```javascript
 module.exports = {
@@ -57,7 +41,7 @@ module.exports = {
 };
 ```
 
-5. 新建 `src/assets/tailwind.css`：
+3. `src/assets/tailwind.css`:
 
 ```css
 @tailwind base;
@@ -65,3 +49,90 @@ module.exports = {
 @tailwind utilities;
 ```
 
+4. `src/main.js`:
+
+```javascript
+import "./assets/tailwind.css";
+```
+
+5. `App.vue`:
+
+```vue
+<template>
+  <h1 class="text-3xl font-bold underline">Hello world!</h1>
+</template>
+```
+
+## 官方推荐工具
+
+### Prettier
+
+1. [tailwindlabs](https://github.com/tailwindlabs)
+   /**[prettier-plugin-tailwindcss](https://github.com/tailwindlabs/prettier-plugin-tailwindcss)**:
+
+```bash
+npm i -D prettier prettier-plugin-tailwindcss
+```
+
+2. `prettier.config.js`:
+
+```javascript
+module.exports = {
+  plugins: [require("prettier-plugin-tailwindcss")],
+};
+```
+
+### Icons
+
+1. [tailwindlabs](https://github.com/tailwindlabs)/**[heroicons](https://github.com/tailwindlabs/heroicons)**:
+
+```bash
+npm i @heroicons/vue
+```
+
+2. `App.vue`:
+
+```vue
+<template>
+  <BeakerIcon class="h-6 w-6 text-blue-500"/>
+</template>
+
+<script setup>
+import {BeakerIcon} from "@heroicons/vue/24/solid";
+</script>
+```
+
+## 引入其他工具
+
+### Tailwind CSS
+
+1. 配置
+
+```javascript
+module.exports = {
+  content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
+  theme: {
+    extend: {
+      colors: {
+        "weather-primary": "#00668A",
+        "weather-secondary": "#004E71",
+      },
+    },
+    fontFamily: {
+      Roboto: ["Roboto, sans-serif"],
+    },
+    container: {
+      padding: "2rem",
+      center: true,
+    },
+    screens: {
+      sm: "640px",
+      md: "768px",
+    },
+  },
+};
+```
+
+### Font Awesome
+
+1. 配置 

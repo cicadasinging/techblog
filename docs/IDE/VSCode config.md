@@ -20,6 +20,7 @@
 `@category:"Linters"`:
 
 - `Tailwind CSS IntelliSense`
+- `PostCSS Language Support`
 
 `@category:"Snippets"`:
 
