@@ -4,8 +4,8 @@
 
 `@category:"themes"`:
 
-1. **Disable** all theme but `Monokai`
-2. Install `Monokai Pro`
+- **Disable** all theme but `Monokai`, and install `Monokai Pro`
+- `vscode-icons`
 
 `@category:"Formatters"`:
 
@@ -13,7 +13,7 @@
 
 `@category:"Programming Languages"`:
 
-- `Auto Close Tag`
+- `Auto Complete Tag`
 - `TSLint Vue`
 - `stylus`
 
@@ -21,12 +21,16 @@
 
 - `Tailwind CSS IntelliSense`
 
+`@category:"Snippets"`:
+
+- `Vue VSCode Snippets`
+- `Vue Language Features (Volar)`
+- `TypeScript Vue Plugin (Volar)`
+
 `@category:"other"`:
 
 - `Live Server`
-- `Vue Language Features (Volar)`
-- `TypeScript Vue Plugin (Volar)`
-- `Vue VSCode Snippets`
+- `Indent-Rainbow`
 - `Rainbow Brackets`
 
 ## Config
