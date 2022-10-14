@@ -34,29 +34,33 @@
 - `Indent-Rainbow`
 - `Rainbow Brackets`
 
-## Config
+## Settings
 
-### Format file
-
-1. **Settings**:
+1. `settings.json`:
 
 ```json
-"editor.formatOnSave": true
-"prettier.printWidth": 120
-```
-
-2. **Command Pallet**:
-
-`Format Document With...` > `Configure Default Formatter...` > `Prettier - Code formatter`
-
-### Hidden file
-
-1. **Settings**:
-
-```json
-"files.exclude": {
-"**/.idea": true,
-"**/node_modules": true,
-"**/package-lock.json": true
+{
+  "workbench.startupEditor": "none",
+  "workbench.colorTheme": "Monokai Pro (Filter Machine)",
+  "workbench.iconTheme": "vscode-icons",
+  "editor.formatOnSave": true,
+  "prettier.printWidth": 120,
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "files.exclude": {
+    "**/.idea": true,
+    "**/node_modules": true,
+    "**/package-lock.json": true
+  },
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  }
 }
 ```

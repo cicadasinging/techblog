@@ -1,6 +1,6 @@
 # weather--vite-tailwindcss
 
-## 搭建基础环境
+## 基础环境搭建
 
 ### Vite
 
@@ -67,8 +67,7 @@ import "./assets/tailwind.css";
 
 ### Prettier
 
-1. [tailwindlabs](https://github.com/tailwindlabs)
-   /**[prettier-plugin-tailwindcss](https://github.com/tailwindlabs/prettier-plugin-tailwindcss)**:
+1. [tailwindlabs](https://github.com/tailwindlabs)/**[prettier-plugin-tailwindcss](https://github.com/tailwindlabs/prettier-plugin-tailwindcss)**:
 
 ```bash
 npm i -D prettier prettier-plugin-tailwindcss
@@ -102,15 +101,12 @@ import {BeakerIcon} from "@heroicons/vue/24/solid";
 </script>
 ```
 
-## 引入其他工具
+## 重点编程步骤
 
-### Tailwind CSS
-
-1. 配置
+1. `tailwind.config.js`:
 
 ```javascript
 module.exports = {
-  content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   theme: {
     extend: {
       colors: {
@@ -118,11 +114,8 @@ module.exports = {
         "weather-secondary": "#004E71",
       },
     },
-    fontFamily: {
-      Roboto: ["Roboto, sans-serif"],
-    },
     container: {
-      padding: "2rem",
+      padding: "2rem", 
       center: true,
     },
     screens: {
@@ -133,6 +126,4 @@ module.exports = {
 };
 ```
 
-### Font Awesome
-
-1. 配置 
+2.  
