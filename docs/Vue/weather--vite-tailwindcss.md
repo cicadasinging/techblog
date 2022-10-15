@@ -100,30 +100,3 @@ npm i @heroicons/vue
 import {BeakerIcon} from "@heroicons/vue/24/solid";
 </script>
 ```
-
-## 重点编程步骤
-
-1. `tailwind.config.js`:
-
-```javascript
-module.exports = {
-  theme: {
-    extend: {
-      colors: {
-        "weather-primary": "#00668A",
-        "weather-secondary": "#004E71",
-      },
-    },
-    container: {
-      padding: "2rem", 
-      center: true,
-    },
-    screens: {
-      sm: "640px",
-      md: "768px",
-    },
-  },
-};
-```
-
-2.  
