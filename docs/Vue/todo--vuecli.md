@@ -1,4 +1,4 @@
-# todo--vue3-vuecli
+# todo--vuecli
 
 ## 基础环境搭建
 
@@ -8,14 +8,6 @@
 
 ```json
 {
-  "name": "todo--vue3-vuecli",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
-  },
   "dependencies": {
     "core-js": "^3.8.3",
     "vue": "^3.2.13"
@@ -34,40 +26,13 @@
     "prettier": "^2.4.1",
     "sass": "^1.32.7",
     "sass-loader": "^12.0.0"
-  },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/vue3-essential",
-      "eslint:recommended",
-      "plugin:prettier/recommended"
-    ],
-    "parserOptions": {
-      "parser": "@babel/eslint-parser"
-    },
-    "rules": {}
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not dead",
-    "not ie 11"
-  ],
-  "gitHooks": {
-    "pre-commit": "lint-staged"
-  },
-  "lint-staged": {
-    "*.{js,jsx,vue}": "vue-cli-service lint"
   }
 }
 ```
 
 > 问题：`error  'defineProps' is not defined  no-undef`
 >
-> 解决：[参考文档](https://eslint.vuejs.org/user-guide/#compiler-macros-such-as-defineprops-and-defineemits-are-warned-by-no-undef-rule)。
+> 解决：（[参考文档](https://eslint.vuejs.org/user-guide/#compiler-macros-such-as-defineprops-and-defineemits-are-warned-by-no-undef-rule)）
 >
 > `Terminal`:
 >
@@ -85,10 +50,9 @@
 >     ecmaVersion: 11, // not be 2022
 >     sourceType: "module",
 >   },
-> }
+> };
 > ```
 >
-> 
 
 ### Git
 
