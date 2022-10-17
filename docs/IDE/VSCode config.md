@@ -4,7 +4,7 @@
 
 `@category:"themes"`:
 
-- **Disable** all theme but `Monokai`, and install `Monokai Pro`
+- **Disable** all theme but `Monokai`
 - `vscode-icons`
 
 `@category:"Formatters"`:
@@ -14,6 +14,7 @@
 `@category:"Programming Languages"`:
 
 - `Auto Complete Tag`
+- `ESLint`
 - `TSLint Vue`
 - `stylus`
 
@@ -33,6 +34,9 @@
 - `Live Server`
 - `Indent-Rainbow`
 - `Rainbow Brackets`
+- `Git Graph`
+- `NPM Scripts`
+- `Vue sort attributes`
 
 ## Settings
 
@@ -41,9 +45,13 @@
 ```json
 {
   "workbench.startupEditor": "none",
-  "workbench.colorTheme": "Monokai Pro (Filter Machine)",
+  "workbench.colorTheme": "Monokai Classic",
   "workbench.iconTheme": "vscode-icons",
+  "vsicons.dontShowNewVersionMessage": true,
   "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  },
   "prettier.printWidth": 120,
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -59,8 +67,8 @@
     "**/node_modules": true,
     "**/package-lock.json": true
   },
-  "editor.codeActionsOnSave": {
-    "source.organizeImports": true
-  }
+  "git.confirmSync": false,
+  "git.autofetch": true,
+  "npm.packageManager": "npm"
 }
 ```

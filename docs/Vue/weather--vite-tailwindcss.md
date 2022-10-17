@@ -100,3 +100,38 @@ npm i @heroicons/vue
 import {BeakerIcon} from "@heroicons/vue/24/solid";
 </script>
 ```
+
+## 安装其他工具
+
+```bash
+npm i axios
+```
+
+## 核心编程步骤
+
+1. `tailwind.config.js`:
+
+```javascript
+module.exports = {
+  theme: {
+    extend: {
+      colors: {
+        "weather-primary": "#00668A",
+        "weather-secondary": "#004E71",
+      },
+    },
+    container: {
+      padding: "2rem",
+      center: true,
+    },
+    screens: {
+      sm: "640px",
+      md: "768px",
+    },
+  },
+};
+```
+
+2. `SiteNavigation.vue`
+3. `BaseModal.vue`
+4. 
