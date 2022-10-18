@@ -4,7 +4,7 @@
 
 ### Vite
 
-1. [vuejs](https://github.com/vuejs)/**[create-vue](https://github.com/vuejs/create-vue)**:
+1. 
 
 ```powershell
 cd D:\MyData\Projects\GitHub

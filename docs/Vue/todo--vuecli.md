@@ -63,7 +63,7 @@ git init
 git add -A
 git commit -m "first commit"
 git branch -M main
-git remote add origin git@github.com:cicadasinging/todo--vue3-vuecli.git
+git remote add origin git@github.com:cicadasinging/todo--vuecli.git
 git push -f origin main
 ```
 
