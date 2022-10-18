@@ -36,3 +36,16 @@ git remote add origin git@github.com:cicadasinging/todo--vite.git
 git push -f origin main
 ```
 
+## 其他辅助工具
+
+### Normalize.css([necolas](https://github.com/necolas)/**[normalize.css](https://github.com/necolas/normalize.css)**)
+
+`package.json`:
+
+```json
+{
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}
+```
