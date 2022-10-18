@@ -80,3 +80,13 @@ git push -f origin main
   }
 }
 ```
+
+### [盒子模型](https://zh.learnlayout.com/box-sizing.html)
+
+```css
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+```
