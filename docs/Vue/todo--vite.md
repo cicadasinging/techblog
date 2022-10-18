@@ -4,6 +4,12 @@
 
 ### Vite([vuejs](https://github.com/vuejs)/**[create-vue](https://github.com/vuejs/create-vue)**)
 
+`Terminal`:
+
+```bash
+npm create vue@3
+```
+
 `package.json`:
 
 ```json
@@ -39,6 +45,12 @@ git push -f origin main
 ## 其他辅助工具
 
 ### Normalize.css([necolas](https://github.com/necolas)/**[normalize.css](https://github.com/necolas/normalize.css)**)
+
+`Terminal`:
+
+```bash
+npm i normalize.css
+```
 
 `package.json`:
 

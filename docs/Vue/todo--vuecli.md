@@ -4,6 +4,13 @@
 
 ### [Vue CLI](https://cli.vuejs.org/zh/guide/creating-a-project.html)
 
+`Terminal`:
+
+```bash
+npm i -g @vue/cli
+vue ui
+```
+
 `package.json`:
 
 ```json
@@ -44,12 +51,12 @@
 >
 > ```javascript
 > module.exports = {
->   parser: "vue-eslint-parser",
->   parserOptions: {
->     parser: "espree",
->     ecmaVersion: 11, // not be 2022
->     sourceType: "module",
->   },
+>     parser: "vue-eslint-parser",
+>     parserOptions: {
+>        parser: "espree",
+>        ecmaVersion: 11, // not be 2022
+>        sourceType: "module",
+>     },
 > };
 > ```
 >
@@ -70,6 +77,12 @@ git push -f origin main
 ## 其他辅助工具
 
 ### Normalize.css([necolas](https://github.com/necolas)/**[normalize.css](https://github.com/necolas/normalize.css)**)
+
+`Terminal`:
+
+```bash
+npm i normalize.css
+```
 
 `package.json`:
 
