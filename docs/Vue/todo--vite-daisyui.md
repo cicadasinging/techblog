@@ -1,4 +1,4 @@
-# todo--vite
+# todo--vite-daisyui
 
 ## 基础环境搭建
 
@@ -112,6 +112,6 @@ git init
 git add -A
 git commit -m "first commit"
 git branch -M main
-git remote add origin git@github.com:cicadasinging/todo--vite.git
+git remote add origin git@github.com:cicadasinging/todo--vite-daisyui.git
 git push -f origin main
 ```
