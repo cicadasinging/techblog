@@ -103,6 +103,22 @@ npm i -D prettier prettier-plugin-tailwindcss
 npm i @heroicons/vue
 ```
 
+### daisyUI
+
+`Bash`:
+
+```bash
+npm i daisyui
+```
+
+`tailwind.config.js`:
+
+```javascript
+module.exports = {
+  plugins: [require("daisyui")],
+};
+```
+
 ### Git
 
 `Bash`:
