@@ -4,7 +4,7 @@
 
 ### [Vue CLI](https://cli.vuejs.org/zh/guide/creating-a-project.html)
 
-`Terminal`:
+`Bash`:
 
 ```bash
 npm i -g @vue/cli
@@ -41,7 +41,7 @@ vue ui
 >
 > 解决：（[参考文档](https://eslint.vuejs.org/user-guide/#compiler-macros-such-as-defineprops-and-defineemits-are-warned-by-no-undef-rule)）
 >
-> `Terminal`:
+> `Bash`:
 >
 > ```bash
 > npm i -D vue-eslint-parser
@@ -63,7 +63,7 @@ vue ui
 
 ### Git
 
-`Terminal`:
+`Bash`:
 
 ```bash
 git init
@@ -78,7 +78,7 @@ git push -f origin main
 
 ### Normalize.css([necolas](https://github.com/necolas)/**[normalize.css](https://github.com/necolas/normalize.css)**)
 
-`Terminal`:
+`Bash`:
 
 ```bash
 npm i normalize.css

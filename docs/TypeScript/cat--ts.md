@@ -2,7 +2,7 @@
 
 ## 基础环境搭建
 
-1. Git Bash:
+`Bash`:
 
 ```bash
 mkdir cat--ts
@@ -20,7 +20,7 @@ tsc --init
 tsc -w
 ```
 
-2. `index.html`:
+`index.html`:
 
 ```html
 <!DOCTYPE html>
@@ -59,7 +59,7 @@ tsc -w
 </html>
 ```
 
-3. `style.css`:
+`style.css`:
 
 ```css
 body {

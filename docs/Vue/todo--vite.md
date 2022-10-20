@@ -4,7 +4,7 @@
 
 ### Vite([vuejs](https://github.com/vuejs)/**[create-vue](https://github.com/vuejs/create-vue)**)
 
-`Terminal`:
+`Bash`:
 
 ```bash
 npm create vue@3
@@ -29,9 +29,83 @@ npm create vue@3
 }
 ```
 
+### [Tailwind CSS](https://tailwindcss.com/docs/guides/vite#vue)
+
+`Bash`:
+
+```
+npm i -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+```
+
+> 问题：`error  'module' is not defined  no-undef`
+>
+> 解决：
+>
+> `.eslintrc.cjs`:
+>
+> ```javascript
+> require("@rushstack/eslint-patch/modern-module-resolution");
+> 
+> module.exports = {
+>     env: {
+>        node: true,
+>     },
+> };
+> ```
+
+`tailwind.config.js`:
+
+```javascript
+module.exports = {
+  content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
+};
+```
+
+`tailwind.css`:
+
+```css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+
+`main.js`:
+
+```javascript
+import "./assets/tailwind.css";
+```
+
+#### [tailwindlabs](https://github.com/tailwindlabs)/**[prettier-plugin-tailwindcss](https://github.com/tailwindlabs/prettier-plugin-tailwindcss)**
+
+`Bash`:
+
+```bash
+npm i -D prettier prettier-plugin-tailwindcss
+```
+
+`.prettierrc.json`:
+
+```json
+{
+  "printWidth": 120,
+  "plugins": [
+    "prettier-plugin-tailwindcss"
+  ]
+}
+```
+
+#### [tailwindlabs](https://github.com/tailwindlabs)/**[heroicons](https://github.com/tailwindlabs/heroicons)**
+
+`Bash`:
+
+```bash
+npm i @heroicons/vue
+```
+
 ### Git
 
-`Terminal`:
+`Bash`:
 
 ```bash
 git init
@@ -40,34 +114,4 @@ git commit -m "first commit"
 git branch -M main
 git remote add origin git@github.com:cicadasinging/todo--vite.git
 git push -f origin main
-```
-
-## 其他辅助工具
-
-### Normalize.css([necolas](https://github.com/necolas)/**[normalize.css](https://github.com/necolas/normalize.css)**)
-
-`Terminal`:
-
-```bash
-npm i normalize.css
-```
-
-`package.json`:
-
-```json
-{
-  "dependencies": {
-    "normalize.css": "^8.0.1"
-  }
-}
-```
-
-### [盒子模型](https://zh.learnlayout.com/box-sizing.html)
-
-```css
-* {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-}
 ```
