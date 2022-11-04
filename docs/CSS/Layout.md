@@ -26,9 +26,9 @@ Grid 布局与 Flex 布局有一定的相似性，都可以指定“容器”内
 
 #### ==容器==（flex container）
 
-##### 区块容器：`display: flex;`
+##### `display: flex;`（定义区块）
 
-##### 行内容器：`display: inline-flex;`
+##### `display: inline-flex;`（定义行内）
 
 #### ==项目==（flex item）
 
@@ -38,37 +38,63 @@ Grid 布局与 Flex 布局有一定的相似性，都可以指定“容器”内
 
 #### 容器的属性
 
-##### ~~主轴方向~~：`flex-direction: row | row-reverse | column | column-reverse;`
+##### `flex-direction`（~~主轴方向~~）
 
-##### ~~轴线换行~~：`flex-wrap: nowrap | wrap | wrap-reverse;`
+###### `flex-direction: row | row-reverse | column | column-reverse;`
 
-##### *合并简写*：`flex-flow: <flex-direction> || <flex-wrap>;`
+##### `flex-wrap`（~~轴线换行~~）
 
-##### ==主轴对齐==：`justify-content: flex-start | flex-end | center | space-between | space-around;`
+###### `flex-wrap: nowrap | wrap | wrap-reverse;`
+
+##### `flex-flow`（*合并简写*）
+
+###### `flex-flow: <flex-direction> || <flex-wrap>;`
+
+##### `justify-content`（==主轴对齐==）
+
+###### `justify-content: flex-start | flex-end | center | space-between | space-around;`
 
 <img src="Layout.assets/image-20221027174641320.png" alt="image-20221027174641320" style="zoom: 50%;" />
 
-##### ==纵轴对齐==：`align-items: stretch | flex-start | flex-end | center | baseline;`
+##### `align-items`（==纵轴对齐==）
+
+###### `align-items: stretch | flex-start | flex-end | center | baseline;`
 
 <img src="Layout.assets/image-20221027174757151.png" alt="image-20221027174757151" style="zoom:50%;" />
 
-##### 多轴对齐：`align-content: stretch | flex-start | flex-end | center | space-between | space-around;`
+##### `align-content`（多轴对齐）
+
+###### `align-content: stretch | flex-start | flex-end | center | space-between | space-around;`
 
 <img src="Layout.assets/image-20221027175107107.png" alt="image-20221027175107107" style="zoom:50%;" />
 
 #### 项目的属性
 
-##### 排序编号：`order: <integer>; /* default 0 */`
+##### `order`（排序编号）
 
-##### ~~放大比例~~：`flex-grow: <number>; /* default 0 */`
+###### `order: <integer>; /* default 0 */`
 
-##### ~~缩小比例~~：`flex-shrink: <number>; /* default 1, note 0 = noshrink */`
+##### `flex-grow`（~~放大比例~~）
 
-##### ~~基本空间~~：`flex-basis: <length> | auto; /* default auto = initial main size */`
+###### `flex-grow: <number>; /* default 0 */`
 
-##### *合并简写*：`flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]; /* none = 0 0 auto, auto = 1 1 auto */`[^1]
+##### `flex-shrink`（~~缩小比例~~）
 
-##### ==定制位置==：`align-self: auto | flex-start | flex-end | center | baseline | stretch;`
+###### `flex-shrink: <number>; /* default 1, note 0 = noshrink */`
+
+##### `flex-basis`（~~基本空间~~）
+
+###### `flex-basis: <length> | auto; /* default auto = initial main size */`
+
+##### `flex`（*合并简写*）
+
+###### `flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ];`[^1]
+
+`none = 0 0 auto, auto = 1 1 auto`
+
+##### `align-self`（==定制位置==）
+
+###### `align-self: auto | flex-start | flex-end | center | baseline | stretch;`
 
 ## Grid
 
@@ -78,9 +104,9 @@ Grid 布局与 Flex 布局有一定的相似性，都可以指定“容器”内
 
 #### ==容器==（grid container）
 
-##### 区块容器：`display: grid;`
+##### `display: grid;`（定义区块）
 
-##### 行内容器：`display: inline-grid;`
+##### `display: inline-grid;`（定义行内）
 
 #### ==项目==（grid item）
 
@@ -90,7 +116,7 @@ Grid 布局与 Flex 布局有一定的相似性，都可以指定“容器”内
 
 #### 容器的属性
 
-##### ~~行高列宽~~：`grid-template-rows`, `grid-template-columns`:
+##### `grid-template-rows`, `grid-template-columns`（~~行高列宽~~）
 
 ```css
 .container {
@@ -120,7 +146,7 @@ Grid 布局与 Flex 布局有一定的相似性，都可以指定“容器”内
 }
 ```
 
-##### ~~区域命名~~：`grid-template-areas`:
+##### `grid-template-areas`（~~区域命名~~）
 
 ```css
 .container {
@@ -140,19 +166,27 @@ Grid 布局与 Flex 布局有一定的相似性，都可以指定“容器”内
 }
 ```
 
-##### *合并简写*：`grid-template: <grid-template-rows> <grid-template-columns> || <grid-template-areas>;`
+##### `grid-template`（*合并简写*）
 
-##### ~~自动网格~~：`grid-auto-rows`, `grid-auto-columns`
+###### `grid-template: <grid-template-rows> <grid-template-columns> || <grid-template-areas>;`
 
-##### ~~自动排序~~：`grid-auto-flow: row | column | row dense | column dense;`
+##### `grid-auto-rows`, `grid-auto-columns`（~~自动行列~~）
 
-##### *合并简写*：`grid: [<grid-template-rows> <grid-template-columns> || <grid-template-areas>] <grid-auto-rows> <grid-auto-columns> <grid-auto-flow>;`
+##### `grid-auto-flow`（~~自动排序~~）
 
-##### 沟槽间隔：~~`grid-row-gap`, `grid-column-gap`, `grid-gap`,~~ `gap: <row-gap> <column-gap>?;`[^1]
+###### `grid-auto-flow: row | column | row dense | column dense;`
 
-##### ==器内对齐==：
+##### `grid`（*合并简写*）
 
-###### 水平对齐：`justify-content: start | end | center | stretch | space-around | space-between | space-evenly;`
+###### `grid: [<grid-template-rows> <grid-template-columns> || <grid-template-areas>] <grid-auto-rows> <grid-auto-columns> <grid-auto-flow>;`
+
+##### `gap`（沟槽间隔）
+
+###### ~~`grid-row-gap`, `grid-column-gap`, `grid-gap`,~~ `gap: <row-gap> <column-gap>?;`[^1]
+
+##### `justify-content`, `align-content`, `place-content`（==器内对齐==：水平、垂直、*合并*）
+
+###### `justify-content: start | end | center | stretch | space-around | space-between | space-evenly;`
 
 - `start`:
 
@@ -182,40 +216,42 @@ Grid 布局与 Flex 布局有一定的相似性，都可以指定“容器”内
 
 <img src="Layout.assets/image-20221027184611923.png" alt="image-20221027184611923" style="zoom:50%;" />
 
-###### 垂直对齐：`align-content: start | end | center | stretch | space-around | space-between | space-evenly;`
+###### `align-content: start | end | center | stretch | space-around | space-between | space-evenly;`
 
-###### *合并简写*：`place-content: <align-content> <justify-content>?;`
+###### `place-content: <align-content> <justify-content>?;`[^1]
 
-##### ==格内对齐==：
+##### `justify-items`, `align-items`, `place-items`（==格内对齐==：水平、垂直、*合并*）
 
-###### 水平边线：`justify-items: stretch | start | end | center;`
+###### `justify-items: stretch | start | end | center;`
 
 - `start`:
 
 <img src="Layout.assets/image-20221027183618334.png" alt="image-20221027183618334" style="zoom: 50%;" />
 
-###### 垂直边线：`align-items: stretch | start | end | center;`
+###### `align-items: stretch | start | end | center;`
 
 - `start`:
 
 <img src="Layout.assets/image-20221027183635172.png" alt="image-20221027183635172" style="zoom:50%;" />
 
-###### *合并简写*：`place-items: <align-items> <justify-items>;`[^1]
+###### `place-items: <align-items> <justify-items>;`[^1]
 
 #### 项目的属性
 
-##### ~~边线对齐~~：`grid-row-start`, `grid-row-end`, `grid-column-start`, `grid-column-end`
+##### `grid-row-start`, `grid-row-end`, `grid-column-start`, `grid-column-end`（~~边线对齐~~）
 
-##### *合并简写*：`grid-row: <start-line> / <end-line>;`, `grid-column: <start-line> / <end-line>;`
+##### `grid-row`, `grid-column`（*合并简写*）
 
-##### ==区域位置==：`grid-area`
+###### `grid-row: <start-line> / <end-line>;`, `grid-column: <start-line> / <end-line>;`
 
-##### ==定制位置==：
+##### `grid-area`（==区域位置==）
 
-###### 水平位置：`justify-self: stretch | start | end | center; /* see justify-items */`
+##### `justify-self`, `align-self`, `place-self`（==定制格内对齐==：水平、垂直、*合并*）
 
-###### 垂直位置：`align-self: stretch | start | end | center; /* see align-items */`
+###### `justify-self: stretch | start | end | center; /* see justify-items */`
 
-###### *合并简写*：`place-self: <align-self> <justify-self>?; /* see place-items */`[^1]
+###### `align-self: stretch | start | end | center; /* see align-items */`
+
+###### `place-self: <align-self> <justify-self>?; /* see place-items */`[^1]
 
 [^1]: 如果省略第二个值，则浏览器认为与第一个值相等。
