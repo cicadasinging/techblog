@@ -102,7 +102,9 @@ npm ls -g
 ##### Pnpm
 
 ```powershell
-pnpm config list
+pnpm setup
+pnpm store path
 pnpm config set store-dir "D:\MyData\PnpmRepository\.pnpm-store"
+pnpm config list
 ```
 
