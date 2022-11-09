@@ -57,7 +57,16 @@ yarn -v
 npm ls -g
 ```
 
-4. 安装其他全局软件
+4. 安装软件 Pnpm
+
+```powershell
+npm i -g pnpm
+pnpm -v
+pnpm config list
+```
+
+
+5. 安装其他全局软件
 
 ```powershell
 # npx
