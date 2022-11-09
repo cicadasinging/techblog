@@ -62,7 +62,6 @@ npm ls -g
 ```powershell
 npm i -g pnpm
 pnpm -v
-pnpm config list
 ```
 
 
@@ -99,3 +98,11 @@ yrm use taobao
 npm un nrm
 npm ls -g
 ```
+
+##### Pnpm
+
+```powershell
+pnpm config list
+pnpm config set store-dir "D:\MyData\PnpmRepository\.pnpm-store"
+```
+
